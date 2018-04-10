@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yaya.tp3.MainActivity">
+
+    <TextView
+        android:id="@+id/txtcouleur"
+        android:layout_width="282dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Appuie Sur Button Pour Afficher La Couleur"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnapplique" />
+
+    <ImageButton
+        android:id="@+id/imgrouge"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgblue"
+        android:layout_width="118dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tgrouge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:text="Rouge"
+        android:textOff="Non Rouge"
+        android:textOn="Rouge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp"
+        tools:text="Rouge" />
+
+    <ToggleButton
+        android:id="@+id/tgjaune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Non Jaune"
+        android:textOn="Jaune"
+        app:layout_constraintEnd_toStartOf="@+id/tgblue"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/tgrouge"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp" />
+
+    <ToggleButton
+        android:id="@+id/tgblue"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Non Blue"
+        android:textOn="Blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp" />
+
+    <Button
+        android:id="@+id/btnapplique"
+        android:layout_width="285dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Appliquer la couleur choisie ci-dessus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgjaune" />
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="333dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdblue"
+            android:layout_width="91dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:text="Blue"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <RadioButton
+            android:id="@+id/rdjaune"
+            android:layout_width="91dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:text="Jaune"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <RadioButton
+            android:id="@+id/rdrouge"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:text="Rouge"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="102dp" />
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>
